@@ -11,7 +11,10 @@ export const AppContext = createContext<AppContextState>({
   dispatch: () => undefined
 });
 
-export const AppContextProvider: React.FC = (props => {
+interface AppContextProviderProps {
+  children: React.ReactNode;
+}
+export const AppContextProvider: React.FC<AppContextProviderProps> = (props => {
 
   const [store, dispatch] = useReducer(reducers, initialState);
 
