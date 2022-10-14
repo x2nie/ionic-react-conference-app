@@ -1,9 +1,12 @@
-import { Plugins } from '@capacitor/core';
+// import { Plugins } from '@capacitor/core';
+// import { Storage } from '@capacitor/storage';
+import { Preferences as Storage } from '@capacitor/preferences';
 import { Schedule, Session } from '../models/Schedule';
 import { Speaker } from '../models/Speaker';
 import { Location } from '../models/Location';
 
-const { Storage } = Plugins;
+// const { Storage } = Plugins;
+// const { Storage } = Preferences;
 
 const dataUrl = '/assets/data/data.json';
 const locationsUrl = '/assets/data/locations.json';
